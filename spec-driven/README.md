@@ -14,6 +14,8 @@ Specification-driven development workflow with requirements traceability and per
 | `/spec-validate`  | Validate artifacts and code quality    |
 | `/spec-archive`   | Generate documentation and archive     |
 | `/spec-specs`     | List all features by status            |
+| `/spec-branch`    | Create feature branch from spec        |
+| `/spec-status`    | Show detailed status of a feature      |
 
 ## Agents
 
@@ -27,6 +29,13 @@ Specification-driven development workflow with requirements traceability and per
 | `@spec-implementer`| Code execution with quality gates         |
 | `@spec-archiver`   | Documentation generation                  |
 
+## Skills
+
+| Skill                | Description                               |
+| -------------------- | ----------------------------------------- |
+| `spec-writing`       | Specification writing guidelines          |
+| `task-decomposition` | Task breakdown and dependency mapping     |
+
 ## Workflow
 
 ### 1. Initialize Feature
@@ -37,14 +46,21 @@ Specification-driven development workflow with requirements traceability and per
 /spec-init --link 001                    # Link to existing feature
 ```
 
-### 2. Clarify and Plan
+### 2. Create Branch
+
+```bash
+/spec-branch                 # Create branch from current feature
+/spec-branch 001             # Create branch for specific feature
+```
+
+### 3. Clarify and Plan
 
 ```bash
 /spec-clarify            # Resolve marked ambiguities
 /spec-plan               # Generate technical plan
 ```
 
-### 3. Task Management
+### 4. Task Management
 
 ```bash
 /spec-tasks              # Create task list
@@ -52,12 +68,13 @@ Specification-driven development workflow with requirements traceability and per
 /spec-implement --all    # Execute all pending tasks
 ```
 
-### 4. Quality and Documentation
+### 5. Quality and Documentation
 
 ```bash
 /spec-validate           # Multi-mode validation
 /spec-archive            # Generate documentation
 /spec-specs              # List all features
+/spec-status             # Detailed feature status
 ```
 
 ## Features
@@ -67,14 +84,39 @@ Specification-driven development workflow with requirements traceability and per
 - **Persistent Artifacts**: spec.md, plan.md, tasks.md files
 - **Task Dependencies**: Automatic dependency management with [P] and [B:Txxx] markers
 - **Quality Gates**: Lint, typecheck, test automation after each task
+- **Branch Integration**: Automatic branch creation and linking
 
 ## Installation
 
 ```bash
 cp -r spec-driven/commands/* .opencode/commands/
 cp -r spec-driven/agents/* .opencode/agents/
+cp -r spec-driven/skills/* .opencode/skills/
+```
+
+## Agent Configuration
+
+All agents include optimized settings:
+
+- **temperature**: 0.1-0.2 (deterministic output)
+- **steps**: Limited iterations per agent type
+- **permission.bash**: Restricted to safe commands where applicable
+
+### Override Settings
+
+In your `opencode.json`:
+
+```json
+{
+  "agent": {
+    "spec-implementer": {
+      "temperature": 0.3,
+      "steps": 60
+    }
+  }
+}
 ```
 
 ## Requirements
 
-- OpenCode CLI
+- OpenCode CLI v1.0+

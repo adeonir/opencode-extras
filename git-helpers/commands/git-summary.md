@@ -1,5 +1,6 @@
 ---
 description: Generate PR title and description to file
+agent: build
 ---
 
 # PR Summary Command

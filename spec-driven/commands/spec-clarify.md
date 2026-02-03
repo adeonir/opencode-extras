@@ -1,5 +1,6 @@
 ---
 description: Resolve ambiguities in the specification
+agent: plan
 ---
 
 # Clarify Command

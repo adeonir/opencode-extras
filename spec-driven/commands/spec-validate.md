@@ -1,5 +1,7 @@
 ---
 description: Validate artifacts, code, and acceptance criteria
+agent: plan
+subtask: true
 ---
 
 # Validate Command

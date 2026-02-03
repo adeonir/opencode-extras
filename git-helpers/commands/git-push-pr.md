@@ -1,5 +1,6 @@
 ---
 description: Push branch and create PR with generated details
+agent: build
 ---
 
 # Push PR Command

@@ -1,5 +1,6 @@
 ---
 description: Generate docs and mark feature as archived
+agent: build
 ---
 
 # Archive Command

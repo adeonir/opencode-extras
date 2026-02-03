@@ -1,10 +1,21 @@
 ---
 description: Expert code analyst specialized in tracing feature implementations across codebases
 mode: subagent
+temperature: 0.1
+steps: 30
 tools:
   bash: true
   edit: false
   write: false
+permission:
+  bash:
+    "*": deny
+    "find *": allow
+    "cat *": allow
+    "ls *": allow
+    "head *": allow
+    "tail *": allow
+    "tree *": allow
 ---
 
 # Explorer Agent

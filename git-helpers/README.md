@@ -18,6 +18,13 @@ Git workflow commands with confidence-scored code review for OpenCode CLI.
 | `@git-code-reviewer`     | Analyzes code for bugs, security, performance |
 | `@git-guidelines-auditor`| Checks compliance with CLAUDE.md guidelines   |
 
+## Skills
+
+| Skill                    | Description                                   |
+| ------------------------ | --------------------------------------------- |
+| `conventional-commits`   | Commit message guidelines and rules           |
+| `code-review-guidelines` | Code review best practices and scoring        |
+
 ## Usage
 
 ### Code Review
@@ -48,9 +55,33 @@ Git workflow commands with confidence-scored code review for OpenCode CLI.
 ```bash
 cp -r git-helpers/commands/* .opencode/commands/
 cp -r git-helpers/agents/* .opencode/agents/
+cp -r git-helpers/skills/* .opencode/skills/
+```
+
+## Agent Configuration
+
+All agents include optimized settings:
+
+- **temperature**: 0.1 (deterministic output)
+- **steps**: Limited iterations to control cost
+- **permission.bash**: Restricted to safe commands (git, find, cat)
+
+### Override Settings
+
+In your `opencode.json`:
+
+```json
+{
+  "agent": {
+    "git-code-reviewer": {
+      "temperature": 0.2,
+      "steps": 30
+    }
+  }
+}
 ```
 
 ## Requirements
 
-- OpenCode CLI
+- OpenCode CLI v1.0+
 - `gh` CLI (for PR operations)

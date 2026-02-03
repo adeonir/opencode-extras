@@ -1,5 +1,6 @@
 ---
 description: Explore codebase and generate technical plan
+agent: plan
 ---
 
 # Plan Command

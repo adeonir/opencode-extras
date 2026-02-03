@@ -1,5 +1,6 @@
 ---
 description: Create commits with well-formatted messages
+agent: build
 ---
 
 # Commit Command

@@ -1,10 +1,18 @@
 ---
 description: Senior software architect that creates comprehensive implementation blueprints
 mode: subagent
+temperature: 0.1
+steps: 30
 tools:
   bash: true
   edit: false
   write: true
+permission:
+  bash:
+    "*": deny
+    "find *": allow
+    "cat *": allow
+    "ls *": allow
 ---
 
 # Architect Agent

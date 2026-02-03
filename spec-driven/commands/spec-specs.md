@@ -1,5 +1,6 @@
 ---
 description: List all features by status
+agent: plan
 ---
 
 # /spec-specs Command

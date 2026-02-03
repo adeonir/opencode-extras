@@ -1,5 +1,6 @@
 ---
 description: Execute implementation tasks
+agent: build
 ---
 
 # Implement Command

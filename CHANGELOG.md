@@ -2,12 +2,34 @@
 
 ## 2026-02-03
 
+### Added
+
+- **Skills**: New reusable instruction files for agents
+  - `conventional-commits`: Commit message guidelines and rules
+  - `code-review-guidelines`: Code review best practices and scoring
+  - `spec-writing`: Specification writing guidelines
+  - `task-decomposition`: Task breakdown and dependency mapping
+- **New commands**:
+  - `/spec-branch`: Create feature branch from spec and link them
+  - `/spec-status`: Show detailed status with task progress
+- **Agent improvements**:
+  - Added `temperature` (0.1-0.2) for deterministic output
+  - Added `steps` limit to control cost per agent
+  - Added granular `permission.bash` restrictions for security
+  - Added `permission.webfetch: allow` for researcher agent
+- **Command improvements**:
+  - Added `agent` specification (build/plan) to all commands
+  - Added `subtask: true` to review commands for isolated context
+
 ### Changed
 
 - Commands renamed with prefix to avoid path-like naming (`/git-commit` instead of `/git/commit`)
 - Agents renamed with prefix for consistency (`@git-code-reviewer` instead of `@git/code-reviewer`)
 - Updated all internal references in commands and agents
-- Simplified installation: files copy directly to `.opencode/commands/` and `.opencode/agents/` without subdirectories
+- Simplified installation: files copy directly to `.opencode/commands/`, `.opencode/agents/`, and `.opencode/skills/`
+- Updated READMEs with skills documentation and agent configuration examples
+- Bumped git-helpers to v1.3.0
+- Bumped spec-driven to v2.7.0
 
 ## 2026-02-02
 

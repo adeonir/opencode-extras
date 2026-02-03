@@ -1,10 +1,19 @@
 ---
 description: Multi-mode validator for spec-driven workflow
 mode: subagent
+temperature: 0.1
+steps: 25
 tools:
   bash: true
   edit: false
   write: false
+permission:
+  bash:
+    "*": deny
+    "git diff*": allow
+    "git status*": allow
+    "find *": allow
+    "cat *": allow
 ---
 
 # Validator Agent

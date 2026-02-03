@@ -1,6 +1,8 @@
 ---
 description: Task executor that implements features following the technical plan and task list
 mode: subagent
+temperature: 0.2
+steps: 50
 tools:
   bash: true
   edit: true

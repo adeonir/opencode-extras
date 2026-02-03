@@ -1,5 +1,6 @@
 ---
 description: Generate task list from technical plan
+agent: plan
 ---
 
 # Tasks Command

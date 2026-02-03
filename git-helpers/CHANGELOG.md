@@ -2,6 +2,26 @@
 
 All notable changes to this plugin will be documented in this file.
 
+## v1.3.0 (2026-02-03)
+
+### Added
+
+- **Skills**: New reusable instruction files
+  - `conventional-commits`: Commit message guidelines and rules
+  - `code-review-guidelines`: Code review best practices and scoring
+- **Agent improvements**:
+  - Added `temperature: 0.1` for deterministic output
+  - Added `steps` limit (20-25) to control cost
+  - Added granular `permission.bash` restrictions (only git, find, cat allowed)
+- **Command improvements**:
+  - Added `agent: build` to `/git-commit`, `/git-push-pr`, `/git-summary`
+  - Added `agent: plan` and `subtask: true` to `/git-review`
+
+### Changed
+
+- Installation now includes `skills/` directory
+- Updated README with skills documentation
+
 ## v1.2.3 (2026-02-03)
 
 ### Changed

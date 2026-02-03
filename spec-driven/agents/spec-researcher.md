@@ -1,11 +1,15 @@
 ---
 description: Research specialist for gathering external information about technologies, best practices, APIs, and implementation patterns from the web
 mode: subagent
+temperature: 0.2
+steps: 20
 tools:
   bash: false
   edit: false
   write: true
   webfetch: true
+permission:
+  webfetch: allow
 ---
 
 # Researcher Agent

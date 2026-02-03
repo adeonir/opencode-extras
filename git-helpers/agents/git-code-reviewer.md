@@ -1,10 +1,21 @@
 ---
 description: Senior code reviewer for quality analysis and bug detection
 mode: subagent
+temperature: 0.1
+steps: 25
 tools:
   bash: true
   edit: false
   write: false
+permission:
+  bash:
+    "*": deny
+    "git diff*": allow
+    "git log*": allow
+    "git status*": allow
+    "git show*": allow
+    "cat *": allow
+    "find *": allow
 ---
 
 # Code Reviewer

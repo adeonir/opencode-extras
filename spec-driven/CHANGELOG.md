@@ -2,6 +2,31 @@
 
 All notable changes to this plugin will be documented in this file.
 
+## v2.7.0 (2026-02-03)
+
+### Added
+
+- **Skills**: New reusable instruction files
+  - `spec-writing`: Specification writing guidelines
+  - `task-decomposition`: Task breakdown and dependency mapping
+- **New commands**:
+  - `/spec-branch`: Create feature branch from spec and link them together
+  - `/spec-status`: Show detailed status with task progress and next steps
+- **Agent improvements**:
+  - Added `temperature` (0.1-0.2) for deterministic output
+  - Added `steps` limit (10-50 depending on agent) to control cost
+  - Added granular `permission.bash` restrictions where applicable
+  - Added `permission.webfetch: allow` for researcher agent
+- **Command improvements**:
+  - Added `agent: build` to `/spec-init`, `/spec-implement`, `/spec-archive`
+  - Added `agent: plan` to `/spec-clarify`, `/spec-plan`, `/spec-tasks`, `/spec-specs`, `/spec-status`
+  - Added `subtask: true` to `/spec-validate` for isolated context
+
+### Changed
+
+- Installation now includes `skills/` directory
+- Updated README with skills documentation and new commands
+
 ## v2.6.1 (2026-02-03)
 
 ### Changed

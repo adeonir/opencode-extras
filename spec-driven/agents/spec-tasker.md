@@ -1,6 +1,8 @@
 ---
 description: Specification-driven task decomposer that transforms technical plans into organized, trackable task lists
 mode: subagent
+temperature: 0.1
+steps: 15
 tools:
   bash: false
   edit: false

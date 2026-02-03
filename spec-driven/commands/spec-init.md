@@ -1,5 +1,6 @@
 ---
 description: Create feature specification from description or PRD
+agent: build
 ---
 
 # Init Command

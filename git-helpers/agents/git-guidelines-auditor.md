@@ -1,10 +1,20 @@
 ---
 description: Audits code changes against CLAUDE.md guidelines
 mode: subagent
+temperature: 0.1
+steps: 20
 tools:
   bash: true
   edit: false
   write: false
+permission:
+  bash:
+    "*": deny
+    "git diff*": allow
+    "git log*": allow
+    "git status*": allow
+    "find *": allow
+    "cat *": allow
 ---
 
 # Guidelines Auditor

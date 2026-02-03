@@ -1,6 +1,8 @@
 ---
 description: Documentation generator that creates permanent feature documentation and updates centralized changelog
 mode: subagent
+temperature: 0.2
+steps: 10
 tools:
   bash: false
   edit: false
