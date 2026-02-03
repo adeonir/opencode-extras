@@ -11,36 +11,42 @@ A personal collection of commands, agents, and skills for OpenCode CLI.
 
 ## Installation
 
-### Global (all projects)
+### Using install script (recommended)
 
-Copy to `~/.config/opencode/`:
+The install script creates symlinks, so updates to the repo are automatically reflected.
 
 ```bash
-# git-helpers
-cp -r opencode-extras/git-helpers/commands/* ~/.config/opencode/commands/
-cp -r opencode-extras/git-helpers/agents/* ~/.config/opencode/agents/
-cp -r opencode-extras/git-helpers/skills/* ~/.config/opencode/skills/
+# Clone the repo
+git clone https://github.com/adeonir/opencode-extras.git
+cd opencode-extras
 
-# spec-driven
-cp -r opencode-extras/spec-driven/commands/* ~/.config/opencode/commands/
-cp -r opencode-extras/spec-driven/agents/* ~/.config/opencode/agents/
-cp -r opencode-extras/spec-driven/skills/* ~/.config/opencode/skills/
+# Global install (default: ~/.config/opencode)
+./install.sh
+
+# Or install to a specific project
+./install.sh /path/to/project/.opencode
 ```
 
-### Per-project
+### Manual copy
 
-Copy to your project's `.opencode/` folder:
+If you prefer copying files instead of symlinks:
 
 ```bash
-# git-helpers
-cp -r opencode-extras/git-helpers/commands/* .opencode/commands/
-cp -r opencode-extras/git-helpers/agents/* .opencode/agents/
-cp -r opencode-extras/git-helpers/skills/* .opencode/skills/
+# Global install
+cp -r git-helpers/commands/* ~/.config/opencode/commands/
+cp -r git-helpers/agents/* ~/.config/opencode/agents/
+cp -r git-helpers/skills/* ~/.config/opencode/skills/
+cp -r spec-driven/commands/* ~/.config/opencode/commands/
+cp -r spec-driven/agents/* ~/.config/opencode/agents/
+cp -r spec-driven/skills/* ~/.config/opencode/skills/
 
-# spec-driven
-cp -r opencode-extras/spec-driven/commands/* .opencode/commands/
-cp -r opencode-extras/spec-driven/agents/* .opencode/agents/
-cp -r opencode-extras/spec-driven/skills/* .opencode/skills/
+# Per-project install
+cp -r git-helpers/commands/* .opencode/commands/
+cp -r git-helpers/agents/* .opencode/agents/
+cp -r git-helpers/skills/* .opencode/skills/
+cp -r spec-driven/commands/* .opencode/commands/
+cp -r spec-driven/agents/* .opencode/agents/
+cp -r spec-driven/skills/* .opencode/skills/
 ```
 
 This gives you:
