@@ -46,7 +46,7 @@ Read from `.specs/{ID}-{feature}/`:
 
 Check `docs/research/` for any referenced research files.
 
-If plan.md or tasks.md don't exist, inform user to run `/spec/plan` and `/spec/tasks` first.
+If plan.md or tasks.md don't exist, inform user to run `/spec-plan` and `/spec-tasks` first.
 
 ### Step 3: Update Status
 
@@ -112,12 +112,12 @@ After execution:
 - Show files created/modified
 - Show remaining tasks (if any)
 - Suggest commit message
-- If all done: suggest `/spec/validate` for final review
-- If tasks remain: suggest continuing with `/spec/implement`
+- If all done: suggest `/spec-validate` for final review
+- If tasks remain: suggest continuing with `/spec-implement`
 
 ## Error Handling
 
-- **Feature not found**: List available features or suggest `/spec/init`
+- **Feature not found**: List available features or suggest `/spec-init`
 - **Plan/tasks not found**: Inform user to run previous commands
 - **Dependency blocked**: List which tasks need to complete first
 - **Implementation error**: Report issue, keep task unchecked

@@ -33,7 +33,7 @@ Each artifact has a distinct purpose. Never mix these concerns.
 - Database schemas or API designs
 - Architecture decisions
 
-These belong in plan.md, created by `/spec/plan`.
+These belong in plan.md, created by `/spec-plan`.
 
 ## Arguments
 
@@ -314,7 +314,7 @@ Inform the user:
 - Branch associated: `{branch}` (or "none")
 - If brownfield: Number of related files analyzed
 - Number of items needing clarification (if any)
-- Next step: `/spec/clarify` to resolve ambiguities, or `/spec/plan` if none
+- Next step: `/spec-clarify` to resolve ambiguities, or `/spec-plan` if none
 
 ## Error Handling
 

@@ -1,8 +1,12 @@
 # Changelog
 
-## 2026-02-02
+## 2026-02-03
 
 ### Changed
+
+- Commands renamed with prefix to avoid path-like naming (`/git-commit` instead of `/git/commit`)
+- Updated all internal references in commands and agents
+- Simplified installation: files copy directly to `.opencode/commands/` without subdirectories
 
 ## 2026-02-02
 

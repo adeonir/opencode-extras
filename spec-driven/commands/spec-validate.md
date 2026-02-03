@@ -91,12 +91,12 @@ Show validation results based on mode:
 
 ### Summary
 
-- Status: **Ready for /spec/plan** or **Needs clarification**
+- Status: **Ready for /spec-plan** or **Needs clarification**
 
 ### Next Steps
 
-- Run `/spec/clarify` if ambiguities found
-- Run `/spec/plan` to generate technical plan
+- Run `/spec-clarify` if ambiguities found
+- Run `/spec-plan` to generate technical plan
 ```
 
 **Mode Plan:**
@@ -121,7 +121,7 @@ Show validation results based on mode:
 
 ### Summary
 
-- Status: **Ready for /spec/tasks** or **Needs corrections**
+- Status: **Ready for /spec-tasks** or **Needs corrections**
 ```
 
 **Mode Tasks:**
@@ -141,7 +141,7 @@ Show validation results based on mode:
 
 ### Summary
 
-- Status: **Ready for /spec/implement** or **Needs fixes**
+- Status: **Ready for /spec-implement** or **Needs fixes**
 ```
 
 **Mode Full:**
@@ -160,12 +160,12 @@ Show validation results based on mode:
 
   - Update spec.md frontmatter to `status: done`
   - Inform user feature is complete
-  - Suggest `/spec/archive` to generate documentation
+  - Suggest `/spec-archive` to generate documentation
 
 - **If any checks fail:**
   - Keep status as `to-review`
   - List issues that need fixing
-  - Suggest running `/spec/implement` to fix issues
+  - Suggest running `/spec-implement` to fix issues
 
 ### Step 8: Report
 
@@ -173,13 +173,13 @@ Summary with next steps based on mode:
 
 | Mode  | If Valid         | If Issues                |
 | ----- | ---------------- | ------------------------ |
-| Spec  | Run /spec/plan   | Run /spec/clarify        |
-| Plan  | Run /spec/tasks  | Fix plan inconsistencies |
-| Tasks | Run /spec/implement | Fix coverage gaps     |
-| Full  | Run /spec/archive   | Run /spec/implement   |
+| Spec  | Run /spec-plan   | Run /spec-clarify        |
+| Plan  | Run /spec-tasks  | Fix plan inconsistencies |
+| Tasks | Run /spec-implement | Fix coverage gaps     |
+| Full  | Run /spec-archive   | Run /spec-implement   |
 
 ## Error Handling
 
-- **Feature not found**: List available features or suggest `/spec/init`
-- **No artifacts**: Suggest `/spec/init` to start
-- **No code changes (Full mode)**: Warn and suggest running /spec/implement first
+- **Feature not found**: List available features or suggest `/spec-init`
+- **No artifacts**: Suggest `/spec-init` to start
+- **No code changes (Full mode)**: Warn and suggest running /spec-implement first

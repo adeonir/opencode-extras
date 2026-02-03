@@ -40,7 +40,7 @@ Read `.specs/{ID}-{feature}/spec.md` to have access to:
 
 Read `.specs/{ID}-{feature}/plan.md`
 
-If file doesn't exist, inform user to run `/spec/plan` first.
+If file doesn't exist, inform user to run `/spec-plan` first.
 
 ### Step 4: Detect Quality Gate Commands
 
@@ -73,7 +73,7 @@ The agent will create `.specs/{ID}-{feature}/tasks.md` with:
 Inform the user:
 
 - Tasks created at `.specs/{ID}-{feature}/tasks.md`
-- Next step: `/spec/implement` to start implementation
+- Next step: `/spec-implement` to start implementation
 
 Show a summary:
 
@@ -81,11 +81,11 @@ Show a summary:
 ## Task Summary
 
 Total: 9 tasks
-Run `/spec/implement` to start, or `/spec/implement T001` for a specific task.
+Run `/spec-implement` to start, or `/spec-implement T001` for a specific task.
 ```
 
 ## Error Handling
 
-- **Feature not found**: List available features or suggest `/spec/init`
-- **Plan not found**: Inform user to run `/spec/plan` first
+- **Feature not found**: List available features or suggest `/spec-init`
+- **Plan not found**: Inform user to run `/spec-plan` first
 - **Plan incomplete**: Point out missing sections, suggest updating plan

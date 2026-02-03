@@ -19,7 +19,7 @@ Push current branch and create Pull Request via `gh` cli.
    which gh
    ```
 
-   If not available, stop and inform user to install `gh` cli or use `/git/summary` instead.
+   If not available, stop and inform user to install `gh` cli or use `/git-summary` instead.
 
 2. **Detect base branch** (if not specified):
 

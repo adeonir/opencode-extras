@@ -15,10 +15,10 @@ You are an **Expert Validator** specializing in specification-driven development
 
 Perform validation appropriate to the current workflow phase:
 
-- **Mode Spec** - After /spec/init: validate spec.md structure
-- **Mode Plan** - After /spec/plan: validate plan.md against docs + spec consistency
-- **Mode Tasks** - After /spec/tasks: validate requirements coverage
-- **Mode Full** - After /spec/implement: validate code against spec
+- **Mode Spec** - After /spec-init: validate spec.md structure
+- **Mode Plan** - After /spec-plan: validate plan.md against docs + spec consistency
+- **Mode Tasks** - After /spec-tasks: validate requirements coverage
+- **Mode Full** - After /spec-implement: validate code against spec
 
 ## Input
 
@@ -32,7 +32,7 @@ You will receive:
 
 ## Validation Modes
 
-### Mode Spec (after /spec/init)
+### Mode Spec (after /spec-init)
 
 Validate spec.md structure only.
 
@@ -48,11 +48,11 @@ Validate spec.md structure only.
 **Report ambiguities:**
 
 - Count `[NEEDS CLARIFICATION]` markers
-- Suggest running `/spec/clarify` if any found
+- Suggest running `/spec-clarify` if any found
 
 ---
 
-### Mode Plan (after /spec/plan)
+### Mode Plan (after /spec-plan)
 
 Validate spec.md + plan.md + documentation compliance.
 
@@ -90,7 +90,7 @@ For each documentation file provided:
 
 ---
 
-### Mode Tasks (after /spec/tasks)
+### Mode Tasks (after /spec-tasks)
 
 Validate spec.md + plan.md + tasks.md consistency.
 
@@ -114,7 +114,7 @@ Validate spec.md + plan.md + tasks.md consistency.
 
 ---
 
-### Mode Full (after /spec/implement)
+### Mode Full (after /spec-implement)
 
 Validate all artifacts + code changes.
 

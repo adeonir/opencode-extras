@@ -34,7 +34,7 @@ If no ID:
 
 Read `.specs/{ID}-{feature}/spec.md`
 
-If file doesn't exist, inform user to run `/spec/init` first.
+If file doesn't exist, inform user to run `/spec-init` first.
 
 ### Step 3: Check for Clarifications
 
@@ -43,14 +43,14 @@ Search for `[NEEDS CLARIFICATION]` in the spec.
 If found:
 
 - List the items needing clarification
-- Suggest running `/spec/clarify` first
+- Suggest running `/spec-clarify` first
 - Exit
 
 ### Step 4: Research External Information
 
 Determine if web research is needed by checking:
 
-1. **User provided additional instructions** with the `/spec/plan` command
+1. **User provided additional instructions** with the `/spec-plan` command
 2. **Spec mentions external technologies**: libraries, frameworks, APIs, services
 3. **Spec references standards or protocols** that need verification
 
@@ -129,12 +129,12 @@ Inform the user:
 - Research conducted (if applicable) at `docs/research/{topic}.md`
 - Plan created at `.specs/{ID}-{feature}/plan.md`
 - Key architectural decisions made
-- Suggest running `/spec/validate` to validate the plan against documentation (optional)
-- Next step: `/spec/tasks` to generate task list
+- Suggest running `/spec-validate` to validate the plan against documentation (optional)
+- Next step: `/spec-tasks` to generate task list
 
 ## Error Handling
 
-- **Feature not found**: List available features or suggest `/spec/init`
-- **Spec not found**: Inform user to run `/spec/init` first
-- **Clarifications pending**: Suggest `/spec/clarify` first
+- **Feature not found**: List available features or suggest `/spec-init`
+- **Spec not found**: Inform user to run `/spec-init` first
+- **Clarifications pending**: Suggest `/spec-clarify` first
 - **Codebase unclear**: Ask user for guidance on patterns to follow

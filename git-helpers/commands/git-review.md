@@ -15,9 +15,9 @@ Review code changes using `@git/code-reviewer` and `@git/guidelines-auditor` age
 ## Usage
 
 ```bash
-/git/review              # Terminal output, ask to save
-/git/review main         # Compare against main
-/git/review --comment    # Post to PR via gh
+/git-review              # Terminal output, ask to save
+/git-review main         # Compare against main
+/git-review --comment    # Post to PR via gh
 ```
 
 ## Process

@@ -4,16 +4,16 @@ Specification-driven development workflow with requirements traceability and per
 
 ## Commands
 
-| Command            | Description                            |
-| ------------------ | -------------------------------------- |
-| `/spec/init`       | Create feature specification           |
-| `/spec/clarify`    | Resolve ambiguities in specification   |
-| `/spec/plan`       | Generate technical implementation plan |
-| `/spec/tasks`      | Create task list with dependencies     |
-| `/spec/implement`  | Execute implementation tasks           |
-| `/spec/validate`   | Validate artifacts and code quality    |
-| `/spec/archive`    | Generate documentation and archive     |
-| `/spec/specs`      | List all features by status            |
+| Command           | Description                            |
+| ----------------- | -------------------------------------- |
+| `/spec-init`      | Create feature specification           |
+| `/spec-clarify`   | Resolve ambiguities in specification   |
+| `/spec-plan`      | Generate technical implementation plan |
+| `/spec-tasks`     | Create task list with dependencies     |
+| `/spec-implement` | Execute implementation tasks           |
+| `/spec-validate`  | Validate artifacts and code quality    |
+| `/spec-archive`   | Generate documentation and archive     |
+| `/spec-specs`     | List all features by status            |
 
 ## Agents
 
@@ -32,32 +32,32 @@ Specification-driven development workflow with requirements traceability and per
 ### 1. Initialize Feature
 
 ```bash
-/spec/init "Add user authentication"     # Create spec from description
-/spec/init @requirements.md              # Use file as context
-/spec/init --link 001                    # Link to existing feature
+/spec-init "Add user authentication"     # Create spec from description
+/spec-init @requirements.md              # Use file as context
+/spec-init --link 001                    # Link to existing feature
 ```
 
 ### 2. Clarify and Plan
 
 ```bash
-/spec/clarify            # Resolve marked ambiguities
-/spec/plan               # Generate technical plan
+/spec-clarify            # Resolve marked ambiguities
+/spec-plan               # Generate technical plan
 ```
 
 ### 3. Task Management
 
 ```bash
-/spec/tasks              # Create task list
-/spec/implement T001     # Execute specific task
-/spec/implement --all    # Execute all pending tasks
+/spec-tasks              # Create task list
+/spec-implement T001     # Execute specific task
+/spec-implement --all    # Execute all pending tasks
 ```
 
 ### 4. Quality and Documentation
 
 ```bash
-/spec/validate           # Multi-mode validation
-/spec/archive            # Generate documentation
-/spec/specs              # List all features
+/spec-validate           # Multi-mode validation
+/spec-archive            # Generate documentation
+/spec-specs              # List all features
 ```
 
 ## Features
@@ -71,8 +71,8 @@ Specification-driven development workflow with requirements traceability and per
 ## Installation
 
 ```bash
-cp -r spec-driven/commands .opencode/commands/spec
-cp -r spec-driven/agents .opencode/agents/spec
+cp -r spec-driven/commands/* .opencode/commands/
+cp -r spec-driven/agents/* .opencode/agents/
 ```
 
 ## Requirements

@@ -33,7 +33,7 @@ If no ID:
 
 Read `.specs/{ID}-{feature}/spec.md`
 
-If file doesn't exist, inform user to run `/spec/init` first.
+If file doesn't exist, inform user to run `/spec-init` first.
 
 ### Step 3: Find Clarifications Needed
 
@@ -42,7 +42,7 @@ Search for all `[NEEDS CLARIFICATION: ...]` markers in the spec.
 If none found:
 
 - Inform user the spec is complete
-- Suggest running `/spec/plan` next
+- Suggest running `/spec-plan` next
 - Exit
 
 ### Step 4: Present Questions
@@ -66,11 +66,11 @@ After all clarifications:
 
 - Show summary of what was clarified
 - Check if any new clarifications emerged
-- Suggest `/spec/plan` as next step if spec is complete
+- Suggest `/spec-plan` as next step if spec is complete
 
 ## Error Handling
 
-- **Feature not found**: List available features or suggest `/spec/init`
-- **Spec not found**: Inform user to run `/spec/init` first
+- **Feature not found**: List available features or suggest `/spec-init`
+- **Spec not found**: Inform user to run `/spec-init` first
 - **User unsure**: Mark as still needing clarification, move on
 - **Conflicting answers**: Ask for resolution before proceeding

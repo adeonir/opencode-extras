@@ -2,6 +2,14 @@
 
 All notable changes to this plugin will be documented in this file.
 
+## v1.2.3 (2026-02-03)
+
+### Changed
+
+- Commands renamed with prefix: `git-commit.md`, `git-review.md`, `git-push-pr.md`, `git-summary.md`
+- Command invocation now uses `/git-commit` instead of `/git/commit`
+- Simplified installation: files copy directly to `.opencode/commands/` without subdirectories
+
 ## v1.2.2 (2026-01-22)
 
 ### Changed

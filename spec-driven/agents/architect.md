@@ -194,4 +194,4 @@ Key insights:
 
 Save to: `.specs/{ID}-{feature}/plan.md`
 
-The folder is created by `/spec/init`.
+The folder is created by `/spec-init`.

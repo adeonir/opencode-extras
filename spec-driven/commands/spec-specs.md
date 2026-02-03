@@ -2,7 +2,7 @@
 description: List all features by status
 ---
 
-# /spec/specs Command
+# /spec-specs Command
 
 List all features in `.specs/` organized by status.
 
@@ -55,15 +55,15 @@ Total: 3 features
 
 ## Edge Cases
 
-- **No .specs/ directory**: "No features found. Use /spec/init to create one."
-- **Empty .specs/**: "No features found. Use /spec/init to create one."
+- **No .specs/ directory**: "No features found. Use /spec-init to create one."
+- **Empty .specs/**: "No features found. Use /spec-init to create one."
 - **Missing frontmatter**: Show with status "unknown"
 - **Invalid directory name**: Skip (not a feature)
 
 ## Filtering (optional)
 
 ```bash
-/spec/specs                    # All features
-/spec/specs --status ready     # Only ready
-/spec/specs --status done      # Only done
+/spec-specs                    # All features
+/spec-specs --status ready     # Only ready
+/spec-specs --status done      # Only done
 ```

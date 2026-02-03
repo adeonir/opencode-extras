@@ -34,7 +34,7 @@ Read `.specs/{ID}-{feature}/spec.md` frontmatter.
 Check status:
 
 - If `done`: proceed
-- If `to-review`: suggest running `/spec/validate` first
+- If `to-review`: suggest running `/spec-validate` first
 - If other: inform user feature is not ready for archive
 
 ### Step 3: Load Artifacts
@@ -124,5 +124,5 @@ Inform user:
 ## Error Handling
 
 - **Feature not found**: List available features
-- **Not in done status**: Suggest running `/spec/validate` first
+- **Not in done status**: Suggest running `/spec-validate` first
 - **Missing artifacts**: Note which files are missing

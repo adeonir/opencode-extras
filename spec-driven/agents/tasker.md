@@ -185,4 +185,4 @@ Legend: [P] = parallel-safe, [B:Txxx] = blocked by task(s)
 
 Save to: `.specs/{ID}-{feature}/tasks.md`
 
-The folder is created by `/spec/init`.
+The folder is created by `/spec-init`.
