@@ -4,7 +4,7 @@ description: Review code changes using specialized agents
 
 # Review Command
 
-Review code changes using `@git/code-reviewer` and `@git/guidelines-auditor` agents.
+Review code changes using `@git-code-reviewer` and `@git-guidelines-auditor` agents.
 
 ## Arguments
 
@@ -49,8 +49,8 @@ Review code changes using `@git/code-reviewer` and `@git/guidelines-auditor` age
 
 5. **Launch agents in parallel**:
 
-   - `@git/code-reviewer`: Bug detection, security, performance
-   - `@git/guidelines-auditor`: CLAUDE.md compliance checking
+   - `@git-code-reviewer`: Bug detection, security, performance
+   - `@git-guidelines-auditor`: CLAUDE.md compliance checking
 
 6. **Combine results and output**:
    - If `--comment`: Post combined review to PR via `gh pr comment`

@@ -19,13 +19,13 @@ Specification-driven development workflow with requirements traceability and per
 
 | Agent              | Description                               |
 | ------------------ | ----------------------------------------- |
-| `@spec/researcher` | External technology research              |
-| `@spec/explorer`   | Codebase analysis and feature tracing     |
-| `@spec/architect`  | Technical plan creation                   |
-| `@spec/validator`  | Multi-mode artifact validation            |
-| `@spec/tasker`     | Task decomposition and dependency mapping |
-| `@spec/implementer`| Code execution with quality gates         |
-| `@spec/archiver`   | Documentation generation                  |
+| `@spec-researcher` | External technology research              |
+| `@spec-explorer`   | Codebase analysis and feature tracing     |
+| `@spec-architect`  | Technical plan creation                   |
+| `@spec-validator`  | Multi-mode artifact validation            |
+| `@spec-tasker`     | Task decomposition and dependency mapping |
+| `@spec-implementer`| Code execution with quality gates         |
+| `@spec-archiver`   | Documentation generation                  |
 
 ## Workflow
 

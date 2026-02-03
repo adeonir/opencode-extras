@@ -52,7 +52,7 @@ Read `package.json` to find:
 
 ### Step 5: Generate Tasks
 
-Invoke the `@spec/tasker` agent with:
+Invoke the `@spec-tasker` agent with:
 
 - The specification (spec.md) with requirements
 - The technical plan (plan.md)

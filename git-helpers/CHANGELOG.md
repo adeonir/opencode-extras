@@ -7,8 +7,9 @@ All notable changes to this plugin will be documented in this file.
 ### Changed
 
 - Commands renamed with prefix: `git-commit.md`, `git-review.md`, `git-push-pr.md`, `git-summary.md`
-- Command invocation now uses `/git-commit` instead of `/git/commit`
-- Simplified installation: files copy directly to `.opencode/commands/` without subdirectories
+- Agents renamed with prefix: `git-code-reviewer.md`, `git-guidelines-auditor.md`
+- Invocation now uses `/git-commit` and `@git-code-reviewer` instead of `/git/commit` and `@git/code-reviewer`
+- Simplified installation: files copy directly to `.opencode/commands/` and `.opencode/agents/` without subdirectories
 
 ## v1.2.2 (2026-01-22)
 

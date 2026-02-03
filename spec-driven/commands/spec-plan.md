@@ -58,7 +58,7 @@ If research is needed:
 
 - Check if `docs/research/{topic}.md` already exists for the technology
 - If exists, use existing research
-- If not, invoke the `@spec/researcher` agent
+- If not, invoke the `@spec-researcher` agent
 
 The researcher will create `docs/research/{topic}.md` with findings (shared across features).
 
@@ -70,7 +70,7 @@ Skip research if:
 
 ### Step 5: Explore Codebase
 
-Invoke the `@spec/explorer` agent to analyze the codebase:
+Invoke the `@spec-explorer` agent to analyze the codebase:
 
 Ask it to explore:
 
@@ -94,7 +94,7 @@ Read the files identified as essential by the explorers.
 
 ### Step 7: Generate Plan
 
-Invoke the `@spec/architect` agent with:
+Invoke the `@spec-architect` agent with:
 
 - The specification (spec.md)
 - Research summary (from docs/research/ if applicable)

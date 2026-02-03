@@ -65,7 +65,7 @@ If mode is Plan or higher:
 
 ### Step 5: Invoke Validator
 
-Invoke the `@spec/validator` agent with:
+Invoke the `@spec-validator` agent with:
 
 - Validation mode
 - Available artifacts

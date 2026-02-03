@@ -7,9 +7,10 @@ All notable changes to this plugin will be documented in this file.
 ### Changed
 
 - Commands renamed with prefix: `spec-init.md`, `spec-plan.md`, `spec-tasks.md`, etc.
-- Command invocation now uses `/spec-init` instead of `/spec/init`
-- Updated all internal command references in commands and agents
-- Simplified installation: files copy directly to `.opencode/commands/` without subdirectories
+- Agents renamed with prefix: `spec-researcher.md`, `spec-explorer.md`, `spec-architect.md`, etc.
+- Invocation now uses `/spec-init` and `@spec-architect` instead of `/spec/init` and `@spec/architect`
+- Updated all internal references in commands and agents
+- Simplified installation: files copy directly to `.opencode/commands/` and `.opencode/agents/` without subdirectories
 
 ## v2.6.0 (2026-01-31)
 

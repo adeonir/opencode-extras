@@ -77,7 +77,7 @@ For each task to execute:
 
 ### Step 7: Execute Tasks
 
-Invoke the `@spec/implementer` agent with:
+Invoke the `@spec-implementer` agent with:
 
 - Task scope
 - Specification (Acceptance Criteria section)

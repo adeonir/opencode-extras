@@ -13,10 +13,10 @@ Git workflow commands with confidence-scored code review for OpenCode CLI.
 
 ## Agents
 
-| Agent                     | Description                                   |
-| ------------------------- | --------------------------------------------- |
-| `@git/code-reviewer`      | Analyzes code for bugs, security, performance |
-| `@git/guidelines-auditor` | Checks compliance with CLAUDE.md guidelines   |
+| Agent                    | Description                                   |
+| ------------------------ | --------------------------------------------- |
+| `@git-code-reviewer`     | Analyzes code for bugs, security, performance |
+| `@git-guidelines-auditor`| Checks compliance with CLAUDE.md guidelines   |
 
 ## Usage
 

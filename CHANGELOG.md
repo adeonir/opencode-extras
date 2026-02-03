@@ -5,8 +5,9 @@
 ### Changed
 
 - Commands renamed with prefix to avoid path-like naming (`/git-commit` instead of `/git/commit`)
+- Agents renamed with prefix for consistency (`@git-code-reviewer` instead of `@git/code-reviewer`)
 - Updated all internal references in commands and agents
-- Simplified installation: files copy directly to `.opencode/commands/` without subdirectories
+- Simplified installation: files copy directly to `.opencode/commands/` and `.opencode/agents/` without subdirectories
 
 ## 2026-02-02
 
