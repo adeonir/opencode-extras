@@ -93,27 +93,27 @@ Commands are triggered with `/command-name` in the TUI.
 
 **git-helpers:**
 
-| Command       | Description                              |
-| ------------- | ---------------------------------------- |
-| `/git-commit` | Create commits with auto-generated messages |
-| `/git-review` | Review changes with confidence scoring   |
-| `/git-push-pr`| Push branch and create PR via gh cli     |
-| `/git-summary`| Generate PR description to PR_DETAILS.md |
+| Command        | Description                                 |
+| -------------- | ------------------------------------------- |
+| `/git-commit`  | Create commits with auto-generated messages |
+| `/git-review`  | Review changes with confidence scoring      |
+| `/git-push-pr` | Push branch and create PR via gh cli        |
+| `/git-summary` | Generate PR description to PR_DETAILS.md    |
 
 **spec-driven:**
 
-| Command          | Description                              |
-| ---------------- | ---------------------------------------- |
-| `/spec-init`     | Create feature specification             |
-| `/spec-clarify`  | Resolve ambiguities in specification     |
-| `/spec-plan`     | Generate technical implementation plan   |
-| `/spec-tasks`    | Create task list with dependencies       |
-| `/spec-implement`| Execute implementation tasks             |
-| `/spec-validate` | Validate artifacts and code quality      |
-| `/spec-archive`  | Generate documentation and archive       |
-| `/spec-specs`    | List all features by status              |
-| `/spec-branch`   | Create feature branch from spec          |
-| `/spec-status`   | Show detailed status of a feature        |
+| Command           | Description                            |
+| ----------------- | -------------------------------------- |
+| `/spec-init`      | Create feature specification           |
+| `/spec-clarify`   | Resolve ambiguities in specification   |
+| `/spec-plan`      | Generate technical implementation plan |
+| `/spec-tasks`     | Create task list with dependencies     |
+| `/spec-implement` | Execute implementation tasks           |
+| `/spec-validate`  | Validate artifacts and code quality    |
+| `/spec-archive`   | Generate documentation and archive     |
+| `/spec-specs`     | List all features by status            |
+| `/spec-branch`    | Create feature branch from spec        |
+| `/spec-status`    | Show detailed status of a feature      |
 
 ### Agents
 
@@ -121,33 +121,33 @@ Agents are invoked with `@agent-name` or automatically by commands.
 
 **git-helpers:**
 
-| Agent                    | Mode     | Description                              |
-| ------------------------ | -------- | ---------------------------------------- |
-| `@git-code-reviewer`     | subagent | Analyzes code for bugs, security, performance |
-| `@git-guidelines-auditor`| subagent | Checks compliance with CLAUDE.md guidelines |
+| Agent                     | Mode     | Description                                   |
+| ------------------------- | -------- | --------------------------------------------- |
+| `@git-code-reviewer`      | subagent | Analyzes code for bugs, security, performance |
+| `@git-guidelines-auditor` | subagent | Checks compliance with CLAUDE.md guidelines   |
 
 **spec-driven:**
 
-| Agent              | Mode     | Description                              |
-| ------------------ | -------- | ---------------------------------------- |
-| `@spec-researcher` | subagent | External technology research             |
-| `@spec-explorer`   | subagent | Codebase analysis and feature tracing    |
-| `@spec-architect`  | subagent | Technical plan creation                  |
-| `@spec-validator`  | subagent | Multi-mode artifact validation           |
-| `@spec-tasker`     | subagent | Task decomposition and dependency mapping|
-| `@spec-implementer`| subagent | Code execution with quality gates        |
-| `@spec-archiver`   | subagent | Documentation generation                 |
+| Agent               | Mode     | Description                               |
+| ------------------- | -------- | ----------------------------------------- |
+| `@spec-researcher`  | subagent | External technology research              |
+| `@spec-explorer`    | subagent | Codebase analysis and feature tracing     |
+| `@spec-architect`   | subagent | Technical plan creation                   |
+| `@spec-validator`   | subagent | Multi-mode artifact validation            |
+| `@spec-tasker`      | subagent | Task decomposition and dependency mapping |
+| `@spec-implementer` | subagent | Code execution with quality gates         |
+| `@spec-archiver`    | subagent | Documentation generation                  |
 
 ### Skills
 
 Skills are loaded on-demand by agents via the `skill` tool.
 
-| Skill                    | Description                              |
-| ------------------------ | ---------------------------------------- |
-| `conventional-commits`   | Commit message guidelines and rules      |
-| `code-review-guidelines` | Code review best practices and scoring   |
-| `spec-writing`           | Specification writing guidelines         |
-| `task-decomposition`     | Task breakdown and dependency mapping    |
+| Skill                    | Description                            |
+| ------------------------ | -------------------------------------- |
+| `conventional-commits`   | Commit message guidelines and rules    |
+| `code-review-guidelines` | Code review best practices and scoring |
+| `spec-writing`           | Specification writing guidelines       |
+| `task-decomposition`     | Task breakdown and dependency mapping  |
 
 ## Configuration
 
