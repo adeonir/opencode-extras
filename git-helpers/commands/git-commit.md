@@ -14,8 +14,7 @@ Create a commit with a well-formatted message based on the actual file changes.
 
 ## Process
 
-1. **Gather context** (run in parallel):
-
+1. **Gather context**:
    ```bash
    git status
    git diff HEAD
@@ -23,19 +22,15 @@ Create a commit with a well-formatted message based on the actual file changes.
    ```
 
 2. **Analyze changes**:
-
-   - Review the diff output to understand what changed
-   - Base your analysis solely on the file contents, not conversation context
-   - Determine the appropriate commit type
+   - Review diff to understand what changed
+   - Determine appropriate commit type
 
 3. **Stage files** (if not using `-s/--staged`):
-
    ```bash
    git add .
    ```
 
-4. **Create commit** using HEREDOC format:
-
+4. **Create commit**:
    ```bash
    git commit -m "$(cat <<'EOF'
    type: concise description
@@ -47,26 +42,25 @@ Create a commit with a well-formatted message based on the actual file changes.
    ```
 
 5. **Verify commit**:
-
    ```bash
    git log -1 --format="%B"
    git status
    ```
 
-6. **Handle pre-commit hooks** (if files were modified):
+6. **Handle pre-commit hooks** (if files modified):
    - Check authorship: `git log -1 --format='%an %ae'`
-   - If safe, amend the commit with modified files (one retry only)
+   - Amend commit with modified files (one retry only)
 
 ## Commit Types
 
-| Type       | Use when                                     |
-| ---------- | -------------------------------------------- |
-| `feat`     | Adding new functionality                     |
-| `fix`      | Fixing a bug                                 |
+| Type | Use when |
+|------|----------|
+| `feat` | Adding new functionality |
+| `fix` | Fixing a bug |
 | `refactor` | Restructuring code without changing behavior |
-| `chore`    | Maintenance tasks, dependencies, configs     |
-| `docs`     | Documentation changes                        |
-| `test`     | Adding or updating tests                     |
+| `chore` | Maintenance tasks, dependencies, configs |
+| `docs` | Documentation changes |
+| `test` | Adding or updating tests |
 
 ## Message Format
 
@@ -79,21 +73,16 @@ type: concise description in imperative mood
 
 ## Guidelines
 
-- Analyze the actual diff, not the conversation context
-- Message should reflect the current state of the implementation
-- Be specific about functionality, not generic
-- Focus on WHAT is being done, not HOW
+- Analyze actual diff, not conversation context
+- Be specific about functionality
+- Focus on WHAT, not HOW
 - Use imperative mood: "add", "fix", "implement"
-- Do not mention specific files or technical decisions
-- Do not reference future tasks or architectural reasoning
-- Do not mention specific package versions (e.g., "update lodash to 4.17.21" -> "update lodash")
-- Do not mention version bumps in commit messages (version changes are implicit from the changelog)
-- Include a body only when the change spans 3+ functional areas (keep to 3-4 concise list items)
-- **NEVER use scope in commit type** - use `feat:` not `feat(scope):`
-- **NEVER add Co-Authored-By, Authored-By, or similar attribution lines**
+- No file names or technical decisions
+- No version bumps in message
+- Include body only for 3+ functional areas
+- **NEVER use scope**: use `feat:` not `feat(scope):`
+- **NEVER add attribution lines**
 
 ## Task
 
 Create a commit for changes with $ARGUMENTS.
-
-Use only git commands. Do not use other tools or send additional messages beyond the tool calls.

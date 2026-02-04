@@ -24,6 +24,7 @@ Git workflow commands with confidence-scored code review for OpenCode CLI.
 | ------------------------ | --------------------------------------------- |
 | `conventional-commits`   | Commit message guidelines and rules           |
 | `code-review-guidelines` | Code review best practices and scoring        |
+| `git-workflow-patterns`  | Standardized patterns for git diff analysis   |
 
 ## Usage
 
@@ -60,10 +61,13 @@ cp -r git-helpers/skills/* .opencode/skills/
 
 ## Agent Configuration
 
-All agents include optimized settings:
+All agents include optimized settings for performance:
 
-- **temperature**: 0.1 (deterministic output)
-- **steps**: Limited iterations to control cost
+| Agent | Steps | Temperature | Focus |
+|-------|-------|-------------|-------|
+| `git-code-reviewer` | 15 | 0.1 | Bug detection, security |
+| `git-guidelines-auditor` | 12 | 0.1 | CLAUDE.md compliance |
+
 - **permission.bash**: Restricted to safe commands (git, find, cat)
 
 ### Override Settings

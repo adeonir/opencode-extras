@@ -6,7 +6,7 @@ A personal collection of commands, agents, and skills for OpenCode CLI.
 
 | Package                      | Version | Description                                                     |
 | ---------------------------- | ------- | --------------------------------------------------------------- |
-| [git-helpers](./git-helpers) | 1.3.0   | Git workflow commands with confidence-scored code review        |
+| [git-helpers](./git-helpers) | 1.4.0   | Git workflow commands with confidence-scored code review        |
 | [spec-driven](./spec-driven) | 2.8.0   | Specification-driven development with requirements traceability |
 
 ## Installation

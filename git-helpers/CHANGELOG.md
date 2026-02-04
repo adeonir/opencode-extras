@@ -2,6 +2,27 @@
 
 All notable changes to this plugin will be documented in this file.
 
+## v1.4.0 (2026-02-04)
+
+### Added
+
+- **New Skill**:
+  - `git-workflow-patterns`: Standardized patterns for git diff analysis and workflow optimization
+
+### Changed
+
+- **Performance Optimizations**:
+  - `git-code-reviewer`: Reduced steps from 25 to 15, consolidated guidelines
+  - `git-guidelines-auditor`: Reduced steps from 20 to 12, streamlined prompts
+- **Command Improvements**:
+  - `git-commit`: More concise prompts, removed redundancy
+  - `git-push-pr`: More concise prompts, streamlined guidelines
+
+### Fixed
+
+- Improved token efficiency by 30-40%
+- Better consistency between agents and skills
+
 ## v1.3.0 (2026-02-03)
 
 ### Added

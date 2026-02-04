@@ -9,6 +9,10 @@
   - All agents optimized with reduced steps (30-40% reduction)
   - Automatic validation mode detection
   - Research caching with TTL and metadata
+- **git-helpers v1.4.0**: Performance optimization release
+  - 1 new skill: `git-workflow-patterns` for standardized git analysis
+  - All agents optimized with reduced steps (30-40% reduction)
+  - More concise prompts in all commands
 
 ## 2026-02-03
 
