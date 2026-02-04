@@ -15,7 +15,7 @@ All notable changes to this plugin will be documented in this file.
 ### Changed
 
 - **Performance Optimizations**:
-  - `spec-explorer`: Reduced steps from 30 to 20, more directive prompts
+  - `spec-explorer`: Reduced steps from 30 to 25, with directive prompts and explicit file content reading
   - `spec-architect`: Reduced steps from 30 to 20, removed redundancies
   - `spec-tasker`: Reduced steps from 15 to 10, streamlined process
   - `spec-implementer`: Reduced steps from 50 to 35, optimized quality gates
@@ -25,11 +25,11 @@ All notable changes to this plugin will be documented in this file.
 - **Command Improvements**:
   - `/spec-plan`: Reduced from 2-3 parallel explorers to 1 comprehensive explorer
   - `/spec-validate`: Added automatic stage detection and filtered git diff
+  - `/spec-implement`: Enhanced context passing
 
 ### Fixed
 
 - Status workflow consistency across all commands
-- Improved token efficiency by 40-60%
 
 ### Added
 

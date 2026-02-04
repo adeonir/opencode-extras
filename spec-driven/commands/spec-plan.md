@@ -83,28 +83,37 @@ Inform user which MCPs are available before exploration.
 
 ### Step 6: Explore Codebase
 
-Invoke the `@spec-explorer` agent with MCP availability status:
+Invoke the `@spec-explorer` agent with:
 
-Ask it to explore:
+- Feature name and context from spec.md
+- MCP availability status
+- Explicit instruction to READ file contents, not just list them
 
-- Similar existing features
-- Architecture patterns and conventions
-- Relevant entry points and integration areas
-- Testing patterns
-- Test infrastructure (framework, patterns, utilities, reference tests)
-- Use serena MCP if available for semantic analysis
+The explorer will:
+1. Find and read documentation files
+2. Identify similar existing features
+3. Read 3-5 reference files to extract actual code patterns
+4. Document conventions with file:line references
+5. Map entry points and dependencies
+6. Identify files to modify and create
 
-Use only 1 explorer agent with comprehensive focus.
+### Step 7: Review Exploration Results
 
-### Step 7: Review Exploration
+Read the explorer's output carefully, focusing on:
 
-Read the files identified as essential by the explorers.
+**Conventions Table:**
+- Naming conventions (functions, classes, variables)
+- Import/export patterns
+- Error handling approach
+- Type definitions style
 
-**Consolidate Critical Files:**
-
-- **Reference Files**: Patterns to follow
+**Essential Files:**
+- **Reference Files**: Patterns to follow (with specific file:line examples)
 - **Files to Modify**: Existing files that need changes
 - **Files to Create**: New files to be added
+- **Dependencies**: Files that will be imported
+
+If the explorer output lacks specific file:line references or pattern details, invoke it again with more specific instructions.
 
 ### Step 8: Generate Plan
 

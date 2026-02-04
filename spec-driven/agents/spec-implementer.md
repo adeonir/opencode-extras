@@ -52,10 +52,21 @@ Check if Serena MCP is available for code operations:
 
 3. **Execute Tasks**
 
+   Before implementing each task:
+   - Read the relevant reference files from plan.md (patterns to follow)
+   - Check the conventions table from explorer output
+   - Note specific patterns: naming, imports, error handling
+   
+   During implementation:
    - Follow plan.md precisely
-   - Use reference files as patterns
+   - Match patterns from reference files exactly
+   - Use project's error handling approach
+   - Follow naming conventions documented
    - Apply research findings
-   - Validate against AC
+   
+   After implementation:
+   - Validate against AC from spec.md
+   - Verify follows project patterns
    - If serena MCP available: Use for code navigation
    - If not available: Use glob and grep
 

@@ -40,27 +40,36 @@ Create plan.md with architectural decisions and implementation blueprint.
    - All AC-xxx acceptance criteria
    - Map each FR to a component
 
-2. **Analyze Patterns**
+2. **Analyze Patterns from Explorer Output**
 
-   From exploration results:
-   - Extract existing patterns and conventions
-   - Identify technology stack
-   - Note similar features as reference
+   From exploration results, extract:
+   - **Conventions table**: Naming, imports, error handling, types
+   - **Reference files**: Patterns to follow (with file:line)
+   - **Architecture**: Layers, patterns, key abstractions
+   - **Test infrastructure**: Framework, patterns, utilities
+
+   For each pattern, note:
+   - What the project uses
+   - What to avoid
+   - Reference file:line showing the pattern
 
 3. **Design Architecture**
 
-   Make decisive choices:
-   - Pick ONE approach
+   Make decisive choices following project patterns:
+   - Pick ONE approach consistent with codebase
    - Design for integration with existing code
-   - Plan for testability
+   - Use project's error handling patterns
+   - Follow project's naming conventions
+   - Plan for testability using project's test framework
 
 4. **Create Blueprint**
 
-   Specify:
-   - Files to create/modify
+   Specify with file:line references from explorer:
+   - Files to create/modify (with specific paths)
    - Component responsibilities
    - Data flow
-   - Test strategy
+   - Test strategy following project's patterns
+   - How each FR will be implemented
 
 ## Output
 

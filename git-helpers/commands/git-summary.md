@@ -80,87 +80,67 @@ git branch --show-current
 
 ## Summary
 
-[2-3 sentences describing the main functional change or feature - focus on business value, not implementation details]
+[2-3 sentences describing the main functional change - focus on business value]
 
 ## Key Changes
 
 ### Core Changes (X files)
-
-- **[filename]**: [Brief functional description of changes]
+- **[filename]**: [Brief functional description]
 
 ### API Changes (X files)
-
 - **[filename]**: [Brief description]
 
 ### State Management (X files)
-
 - **[filename]**: [Brief description]
 
 ### UI Components (X files)
-
 - **[filename]**: [Brief description]
 
 ### Configuration/Build (X files)
-
 - **[filename]**: [Brief description]
 
 ### Documentation (X files)
-
 - **[filename]**: [Brief description]
 
 ## Technical Flow
 
-**Change Flow Description:**
-
-1. [User action or trigger that initiates the change]
-2. [How modified components handle the interaction]
-3. [API calls or state updates that occur]
+1. [User action or trigger]
+2. [How components handle it]
+3. [API calls or state updates]
 4. [Final outcome or UI response]
-5. [Fallback mechanisms or error handling]
+5. [Error handling]
 
-**Key Components Involved:**
-
-- **[Component Name]**: [Role in the change]
-- **[API/Service Name]**: [API modifications or interactions]
-- **[State Management]**: [State changes if applicable]
-
-**Data Flow:**
-
-- Input: [What triggers the change]
-- Processing: [How the change is handled]
-- Output: [What the user experiences]
+**Key Components:**
+- **[Component]**: [Role in change]
+- **[API/Service]**: [API modifications]
+- **[State]**: [State changes]
 
 ## Impact Assessment
 
 ### Risk Level: [LOW/MEDIUM/HIGH]
-
-- [Justification for risk level]
-- [Potential issues to watch for]
+- [Justification and potential issues]
 
 ### Performance Impact: [POSITIVE/NEUTRAL/NEGATIVE]
-
-- [Description of performance changes]
+- [Description of changes]
 
 ### Compatibility Impact: [NONE/MINOR/MAJOR]
-
-- [Backward compatibility considerations]
-- [API changes if any]
+- [Backward compatibility notes]
 
 ## Priority Review Areas
 
-- **HIGH**: [Critical areas - breaking changes, core business logic, state management]
-- **MEDIUM**: [Important areas - UI changes, new features, refactoring]
-- **LOW**: [Minor areas - documentation, styling, configuration]
+- **HIGH**: [Critical areas - breaking changes, core logic]
+- **MEDIUM**: [UI changes, new features]
+- **LOW**: [Documentation, styling]
 
 ## Testing Instructions
 
-1. [Step-by-step instructions to test the changes]
-2. [Expected outcomes for each step]
-3. [Edge cases to verify]
+1. [Step-by-step test instructions]
+2. [Expected outcomes]
+3. [Edge cases]
 
 ## Additional Notes
 
-[Any additional context, future considerations, or related work]
+[Any additional context or considerations]
 ```
 
 ## Template Guidelines

@@ -76,9 +76,16 @@ If mode is Plan or higher:
 Invoke the `@spec-validator` agent with:
 
 - Validation mode
-- Available artifacts
-- Documentation files list (for Plan+)
-- git diff (for Full mode)
+- Feature ID and name
+- Path to `.specs/{ID}-{feature}/`
+- All artifact contents (spec.md, plan.md, tasks.md)
+- For Mode Full:
+  - Complete git diff output
+  - List of files changed
+  - Explicit instruction to compare with plan.md Files to Modify/Create
+  - Explicit instruction to check all FRs have implementation
+  - Explicit instruction to check all ACs have tests
+  - Explicit instruction to identify implementation gaps
 
 ### Step 6: Present Results
 
@@ -153,7 +160,67 @@ Show validation results based on mode:
 ```
 
 **Mode Full:**
-(Full output as in validator agent)
+
+```markdown
+## Validation: {ID}-{feature}
+
+### Mode: Full
+
+### Artifact Structure
+
+| File | Status | Issues |
+|------|--------|--------|
+| spec.md | Valid | - |
+| plan.md | Valid | - |
+| tasks.md | Valid | - |
+
+### Implementation Coverage
+
+| Planned File | Status | Issue |
+|--------------|--------|-------|
+| src/api/routes.ts | Modified | OK |
+| src/services/new.ts | Created | OK |
+| src/utils/helpers.ts | NOT MODIFIED | **GAP** |
+
+### Requirements Coverage
+
+| Requirement | Status | Evidence | Issue |
+|-------------|--------|----------|-------|
+| FR-001 | Implemented | src/api.ts:45 | - |
+| FR-002 | Partial | src/service.ts:23 | Missing error handling |
+| FR-003 | **Missing** | - | **No implementation** |
+
+### Acceptance Criteria Status
+
+| AC | Status | Test Location | Issue |
+|----|--------|---------------|-------|
+| AC-001 | Satisfied | src/test.ts:34 | - |
+| AC-002 | **Missing** | - | **No test found** |
+
+### Implementation Gaps
+
+1. **Missing File Modifications:**
+   - `src/utils/helpers.ts` - Planned but not modified
+
+2. **Missing Requirements:**
+   - FR-003: User validation not implemented
+
+3. **Missing Tests:**
+   - AC-002: No test for error scenario
+
+4. **Pattern Violations:**
+   - Using raw throw instead of custom Error class (see src/service.ts:23)
+
+### Summary
+
+- Status: **Needs fixes**
+- Issues: 5
+- **Gaps Found: 4**
+
+### Next Steps
+
+Run `/spec-implement` to fix the identified gaps.
+```
 
 ### Step 7: Determine Outcome
 

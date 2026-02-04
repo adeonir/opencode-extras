@@ -22,8 +22,9 @@ Create a commit with a well-formatted message based on the actual file changes.
    ```
 
 2. **Analyze changes**:
-   - Review diff to understand what changed
-   - Determine appropriate commit type
+   - Run `git diff HEAD` to see all changes
+   - Describe what the code DOES, not what was discussed
+   - Determine appropriate commit type based on actual changes
 
 3. **Stage files** (if not using `-s/--staged`):
    ```bash
@@ -73,7 +74,10 @@ type: concise description in imperative mood
 
 ## Guidelines
 
-- Analyze actual diff, not conversation context
+**CRITICAL: Message must describe STAGED FILES only, never conversation context**
+
+- **Analyze `git diff --cached` or `git diff HEAD`** - Describe what the code changes DO
+- **Never use conversation context** - Don't reference "user asked", "we discussed", etc.
 - Be specific about functionality
 - Focus on WHAT, not HOW
 - Use imperative mood: "add", "fix", "implement"

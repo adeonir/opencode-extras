@@ -55,14 +55,21 @@ If status is `ready` or `draft`:
 
 - Update spec.md frontmatter to `status: in-progress`
 
-### Step 4: Load Critical Files
+### Step 4: Load Critical Files and Patterns
 
-From plan.md, identify the `## Critical Files` section.
+From plan.md, identify:
 
-For the tasks about to execute:
+1. **Critical Files section**:
+   - Read the **Reference Files** relevant to current tasks (max 5 files)
+   - Read the **Files to Modify** that will be changed
+   - Note the **Dependencies** that will be imported
 
-- Read the **Reference Files** relevant to current tasks (max 5 files)
-- These provide patterns and conventions to follow
+2. **Codebase Patterns section**:
+   - Extract conventions documented with file:line references
+   - Note naming patterns, import styles, error handling
+   - Check test patterns from Test Strategy section
+
+Pass all this context to the implementer agent.
 
 ### Step 5: Parse Scope
 
