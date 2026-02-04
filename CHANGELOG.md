@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-02-04
+
+### Added
+
+- **spec-driven v2.8.0**: Performance optimization release
+  - 4 new skills: `codebase-exploration`, `output-templates`, `validation-checklists`, `research-cache`
+  - All agents optimized with reduced steps (30-40% reduction)
+  - Automatic validation mode detection
+  - Research caching with TTL and metadata
+
 ## 2026-02-03
 
 ### Added

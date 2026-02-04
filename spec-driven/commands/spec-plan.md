@@ -81,7 +81,7 @@ Ask it to explore:
 - Testing patterns
 - Test infrastructure (framework, patterns, utilities, reference tests)
 
-You may launch 2-3 explorer agents in parallel with different focuses.
+Use only 1 explorer agent with comprehensive focus.
 
 ### Step 6: Review Exploration
 

@@ -2,6 +2,35 @@
 
 All notable changes to this plugin will be documented in this file.
 
+## v2.8.0 (2026-02-04)
+
+### Added
+
+- **New Skills**:
+  - `codebase-exploration`: Standardized patterns for codebase analysis
+  - `output-templates`: Pre-defined templates for plan.md and tasks.md
+  - `validation-checklists`: Structured checklists by validation mode
+  - `research-cache`: Caching strategies with TTL and automatic invalidation
+
+### Changed
+
+- **Performance Optimizations**:
+  - `spec-explorer`: Reduced steps from 30 to 20, more directive prompts
+  - `spec-architect`: Reduced steps from 30 to 20, removed redundancies
+  - `spec-tasker`: Reduced steps from 15 to 10, streamlined process
+  - `spec-implementer`: Reduced steps from 50 to 35, optimized quality gates
+  - `spec-validator`: Reduced steps from 25 to 15, added automatic mode detection
+  - `spec-researcher`: Added YAML metadata for cache management
+
+- **Command Improvements**:
+  - `/spec-plan`: Reduced from 2-3 parallel explorers to 1 comprehensive explorer
+  - `/spec-validate`: Added automatic stage detection and filtered git diff
+
+### Fixed
+
+- Status workflow consistency across all commands
+- Improved token efficiency by 40-60%
+
 ## v2.7.0 (2026-02-03)
 
 ### Added

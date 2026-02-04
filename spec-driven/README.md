@@ -31,10 +31,14 @@ Specification-driven development workflow with requirements traceability and per
 
 ## Skills
 
-| Skill                | Description                               |
-| -------------------- | ----------------------------------------- |
-| `spec-writing`       | Specification writing guidelines          |
-| `task-decomposition` | Task breakdown and dependency mapping     |
+| Skill                   | Description                                    |
+| ----------------------- | ---------------------------------------------- |
+| `spec-writing`          | Specification writing guidelines               |
+| `task-decomposition`    | Task breakdown and dependency mapping          |
+| `codebase-exploration`  | Standardized patterns for codebase analysis    |
+| `output-templates`      | Pre-defined templates for plan.md/tasks.md     |
+| `validation-checklists` | Structured checklists by validation mode       |
+| `research-cache`        | Caching strategies with TTL and invalidation   |
 
 ## Workflow
 
@@ -96,11 +100,19 @@ cp -r spec-driven/skills/* .opencode/skills/
 
 ## Agent Configuration
 
-All agents include optimized settings:
+All agents include optimized settings for performance:
 
-- **temperature**: 0.1-0.2 (deterministic output)
-- **steps**: Limited iterations per agent type
+| Agent | Steps | Temperature | Focus |
+|-------|-------|-------------|-------|
+| `spec-explorer` | 20 | 0.1 | Codebase analysis |
+| `spec-architect` | 20 | 0.1 | Technical planning |
+| `spec-tasker` | 10 | 0.1 | Task decomposition |
+| `spec-implementer` | 35 | 0.2 | Code execution |
+| `spec-validator` | 15 | 0.1 | Multi-mode validation |
+| `spec-researcher` | 20 | 0.2 | External research |
+
 - **permission.bash**: Restricted to safe commands where applicable
+- **permission.webfetch**: Enabled for researcher agent
 
 ### Override Settings
 

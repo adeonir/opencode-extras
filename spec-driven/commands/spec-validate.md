@@ -55,7 +55,13 @@ Based on detected mode, read:
 - **Mode Spec**: `spec.md`
 - **Mode Plan**: `spec.md`, `plan.md`, docs files from plan.md references
 - **Mode Tasks**: `spec.md`, `plan.md`, `tasks.md`
-- **Mode Full**: All artifacts + `git diff`
+- **Mode Full**: All artifacts + filtered `git diff`
+
+**For Mode Full, filter diff by plan.md files:**
+```bash
+# Extract files from plan.md Critical Files section
+git diff --name-only | grep -f <(extract_from_plan_md)
+```
 
 ### Step 4: Discover Documentation (Mode Plan+)
 
@@ -161,8 +167,8 @@ Show validation results based on mode:
 - **If all checks pass:**
 
   - Update spec.md frontmatter to `status: done`
-  - Inform user feature is complete
-  - Suggest `/spec-archive` to generate documentation
+  - Inform user feature is complete and ready for documentation
+  - Suggest `/spec-archive` to generate feature documentation
 
 - **If any checks fail:**
   - Keep status as `to-review`
