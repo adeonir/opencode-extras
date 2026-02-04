@@ -69,9 +69,21 @@ Skip research if:
 - No external dependencies mentioned
 - Research already exists for all mentioned technologies
 
-### Step 5: Explore Codebase
+### Step 5: Check for MCPs
 
-Invoke the `@spec-explorer` agent to analyze the codebase:
+Detect available MCPs for enhanced code analysis:
+
+```bash
+# Check for Serena MCP in opencode config
+CONFIG_FILE="${HOME}/.config/opencode/opencode.json"
+SERENA=$(grep -q '"serena"' "$CONFIG_FILE" 2>/dev/null && echo "true" || echo "false")
+```
+
+Inform user which MCPs are available before exploration.
+
+### Step 6: Explore Codebase
+
+Invoke the `@spec-explorer` agent with MCP availability status:
 
 Ask it to explore:
 
@@ -80,10 +92,11 @@ Ask it to explore:
 - Relevant entry points and integration areas
 - Testing patterns
 - Test infrastructure (framework, patterns, utilities, reference tests)
+- Use serena MCP if available for semantic analysis
 
 Use only 1 explorer agent with comprehensive focus.
 
-### Step 6: Review Exploration
+### Step 7: Review Exploration
 
 Read the files identified as essential by the explorers.
 
@@ -93,7 +106,7 @@ Read the files identified as essential by the explorers.
 - **Files to Modify**: Existing files that need changes
 - **Files to Create**: New files to be added
 
-### Step 7: Generate Plan
+### Step 8: Generate Plan
 
 Invoke the `@spec-architect` agent with:
 
@@ -117,13 +130,13 @@ Key points:
 - {relevant findings}
 ```
 
-### Step 8: Update Status
+### Step 9: Update Status
 
 Update spec.md frontmatter:
 
 - Set `status: ready`
 
-### Step 9: Report
+### Step 10: Report
 
 Inform the user:
 

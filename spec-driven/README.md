@@ -19,26 +19,26 @@ Specification-driven development workflow with requirements traceability and per
 
 ## Agents
 
-| Agent              | Description                               |
-| ------------------ | ----------------------------------------- |
-| `@spec-researcher` | External technology research              |
-| `@spec-explorer`   | Codebase analysis and feature tracing     |
-| `@spec-architect`  | Technical plan creation                   |
-| `@spec-validator`  | Multi-mode artifact validation            |
-| `@spec-tasker`     | Task decomposition and dependency mapping |
-| `@spec-implementer`| Code execution with quality gates         |
-| `@spec-archiver`   | Documentation generation                  |
+| Agent               | Description                               |
+| ------------------- | ----------------------------------------- |
+| `@spec-researcher`  | External technology research              |
+| `@spec-explorer`    | Codebase analysis and feature tracing     |
+| `@spec-architect`   | Technical plan creation                   |
+| `@spec-validator`   | Multi-mode artifact validation            |
+| `@spec-tasker`      | Task decomposition and dependency mapping |
+| `@spec-implementer` | Code execution with quality gates         |
+| `@spec-archiver`    | Documentation generation                  |
 
 ## Skills
 
-| Skill                   | Description                                    |
-| ----------------------- | ---------------------------------------------- |
-| `spec-writing`          | Specification writing guidelines               |
-| `task-decomposition`    | Task breakdown and dependency mapping          |
-| `codebase-exploration`  | Standardized patterns for codebase analysis    |
-| `output-templates`      | Pre-defined templates for plan.md/tasks.md     |
-| `validation-checklists` | Structured checklists by validation mode       |
-| `research-cache`        | Caching strategies with TTL and invalidation   |
+| Skill                   | Description                                  |
+| ----------------------- | -------------------------------------------- |
+| `spec-writing`          | Specification writing guidelines             |
+| `task-decomposition`    | Task breakdown and dependency mapping        |
+| `codebase-exploration`  | Standardized patterns for codebase analysis  |
+| `output-templates`      | Pre-defined templates for plan.md/tasks.md   |
+| `validation-checklists` | Structured checklists by validation mode     |
+| `research-cache`        | Caching strategies with TTL and invalidation |
 
 ## Workflow
 
@@ -102,17 +102,53 @@ cp -r spec-driven/skills/* .opencode/skills/
 
 All agents include optimized settings for performance:
 
-| Agent | Steps | Temperature | Focus |
-|-------|-------|-------------|-------|
-| `spec-explorer` | 20 | 0.1 | Codebase analysis |
-| `spec-architect` | 20 | 0.1 | Technical planning |
-| `spec-tasker` | 10 | 0.1 | Task decomposition |
-| `spec-implementer` | 35 | 0.2 | Code execution |
-| `spec-validator` | 15 | 0.1 | Multi-mode validation |
-| `spec-researcher` | 20 | 0.2 | External research |
+| Agent              | Steps | Temperature | Focus                 |
+| ------------------ | ----- | ----------- | --------------------- |
+| `spec-explorer`    | 20    | 0.1         | Codebase analysis     |
+| `spec-architect`   | 20    | 0.1         | Technical planning    |
+| `spec-tasker`      | 10    | 0.1         | Task decomposition    |
+| `spec-implementer` | 35    | 0.2         | Code execution        |
+| `spec-validator`   | 15    | 0.1         | Multi-mode validation |
+| `spec-researcher`  | 20    | 0.2         | External research     |
 
 - **permission.bash**: Restricted to safe commands where applicable
 - **permission.webfetch**: Enabled for researcher agent
+
+## Optional MCPs
+
+The plugin works fully without MCPs, but can leverage optional MCP servers:
+
+### serena
+
+Semantic code analysis and symbol navigation for enhanced codebase exploration.
+
+Config in `~/.config/opencode/opencode.json`:
+
+```json
+{
+  "mcp": {
+    "serena": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--enable-web-dashboard",
+        "false"
+      ]
+    }
+  }
+}
+```
+
+**Benefits:**
+
+- Better symbol navigation in `spec-explorer`
+- Enhanced code analysis in `spec-implementer`
+
+**Without:** Uses `grep`, `glob`, and `read` as fallback
 
 ### Override Settings
 

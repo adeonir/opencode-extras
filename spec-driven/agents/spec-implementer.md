@@ -7,6 +7,9 @@ tools:
   bash: true
   edit: true
   write: true
+  read: true
+  glob: true
+  grep: true
 ---
 
 # Implementer Agent
@@ -25,6 +28,13 @@ Implement tasks from tasks.md respecting dependencies and quality gates.
 - research.md (if exists)
 - tasks.md (progress tracker)
 - Reference files (patterns)
+- MCP availability (serena)
+
+## MCP Detection
+
+Check if Serena MCP is available for code operations:
+- If available: Use for semantic code operations
+- If not available: Use read, glob, grep as fallback
 
 ## Process
 
@@ -46,6 +56,8 @@ Implement tasks from tasks.md respecting dependencies and quality gates.
    - Use reference files as patterns
    - Apply research findings
    - Validate against AC
+   - If serena MCP available: Use for code navigation
+   - If not available: Use glob and grep
 
 4. **Run Quality Gates**
 

@@ -7,6 +7,9 @@ tools:
   bash: true
   edit: false
   write: false
+  glob: true
+  grep: true
+  read: true
 permission:
   bash:
     "*": deny
@@ -30,6 +33,13 @@ Provide structured analysis of how a feature works by tracing implementation fro
 
 - Feature or area to explore
 - Context from spec.md
+- MCP availability (serena)
+
+## MCP Detection
+
+Check if Serena MCP is available for semantic code analysis:
+- If available: Use for symbol navigation and references
+- If not available: Use grep and read as fallback
 
 ## Process
 
@@ -60,6 +70,8 @@ Provide structured analysis of how a feature works by tracing implementation fro
 
    For each entry point found:
    - Follow call chains using `cat` and `grep`
+   - If serena MCP available: Use for finding symbol references
+   - If not available: Use `grep` to find references
    - Identify data transformations
    - Map dependencies
    - Note state changes

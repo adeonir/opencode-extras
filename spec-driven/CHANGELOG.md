@@ -31,6 +31,14 @@ All notable changes to this plugin will be documented in this file.
 - Status workflow consistency across all commands
 - Improved token efficiency by 40-60%
 
+### Added
+
+- **Optional MCP Support**:
+  - `serena`: Semantic code analysis and symbol navigation
+  - Automatic MCP detection in `/spec-plan` command
+  - Fallback to native tools (grep, read, glob) when MCPs unavailable
+  - Updated `spec-explorer` and `spec-implementer` agents to use MCPs when available
+
 ## v2.7.0 (2026-02-03)
 
 ### Added
