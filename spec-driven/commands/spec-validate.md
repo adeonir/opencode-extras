@@ -1,6 +1,6 @@
 ---
 description: Validate artifacts, code, and acceptance criteria
-agent: plan
+agent: build
 subtask: true
 ---
 

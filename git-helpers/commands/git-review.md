@@ -1,7 +1,6 @@
 ---
 description: Review code changes using specialized agents
-agent: plan
-subtask: true
+agent: build
 ---
 
 # Review Command
