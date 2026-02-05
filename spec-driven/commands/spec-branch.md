@@ -93,6 +93,12 @@ Examples:
 - `feature/add-2fa`
 - `feature/payment-flow`
 
+## Task
+
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
+Create feature branch for $ARGUMENTS.
+
 ## Error Handling
 
 - **Feature not found**: List available features or suggest `/spec-init`

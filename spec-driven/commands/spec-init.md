@@ -317,6 +317,12 @@ Inform the user:
 - Number of items needing clarification (if any)
 - Next step: `/spec-clarify` to resolve ambiguities, or `/spec-plan` if none
 
+## Task
+
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
+Initialize feature specification with $ARGUMENTS.
+
 ## Error Handling
 
 - **No input provided**: Ask user for feature description

@@ -106,6 +106,12 @@ Run `{next_command}` to {action_description}.
 [                    ] 0%
 ```
 
+## Task
+
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
+Show status for feature with $ARGUMENTS.
+
 ## Error Handling
 
 - **Feature not found**: List available features or suggest `/spec-init`

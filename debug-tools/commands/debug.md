@@ -112,6 +112,12 @@ The plugin will use available MCPs or fallback to native tools.
 - Type errors (TypeScript resolves)
 - Obvious bugs in diff (use `/git-review`)
 
+## Task
+
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
+Start debugging session for: $ARGUMENTS
+
 ## Notes
 
 - Cleanup is automatic after fix is verified

@@ -153,6 +153,8 @@ git branch --show-current
 
 ## Task
 
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
 Generate PR description for current branch with $ARGUMENTS and save to `PR_DETAILS.md`.
 
 After analyzing all changes:

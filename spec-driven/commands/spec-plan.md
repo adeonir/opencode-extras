@@ -155,6 +155,12 @@ Inform the user:
 - Suggest running `/spec-validate` to validate the plan against documentation (optional)
 - Next step: `/spec-tasks` to generate task list
 
+## Task
+
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
+Create technical plan for feature with $ARGUMENTS.
+
 ## Error Handling
 
 - **Feature not found**: List available features or suggest `/spec-init`

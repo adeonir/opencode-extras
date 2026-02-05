@@ -85,6 +85,12 @@ Total: 9 tasks
 Run `/spec-implement` to start, or `/spec-implement T001` for a specific task.
 ```
 
+## Task
+
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
+Generate task list for feature with $ARGUMENTS.
+
 ## Error Handling
 
 - **Feature not found**: List available features or suggest `/spec-init`

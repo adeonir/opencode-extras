@@ -81,6 +81,12 @@ Only issues with confidence >= 80 are reported.
 X files | Y issues | Z compliance findings
 ```
 
+## Task
+
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
+Review code changes with $ARGUMENTS.
+
 ## Notes
 
 - Only reports issues with >= 80 confidence score

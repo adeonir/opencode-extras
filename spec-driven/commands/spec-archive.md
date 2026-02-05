@@ -122,6 +122,12 @@ Inform user:
 - Feature marked as archived
 - User can delete `.specs/{ID}-{feature}/` manually if desired
 
+## Task
+
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
+Archive feature with $ARGUMENTS.
+
 ## Error Handling
 
 - **Feature not found**: List available features

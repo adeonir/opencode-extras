@@ -89,4 +89,6 @@ type: concise description in imperative mood
 
 ## Task
 
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
 Create a commit for changes with $ARGUMENTS.

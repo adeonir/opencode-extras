@@ -83,6 +83,8 @@ Brief summary of what this PR does (2-3 sentences max).
 
 ## Task
 
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
 Generate PR details for current branch with $ARGUMENTS and create PR using `gh pr create`.
 
 Output the PR URL when done.

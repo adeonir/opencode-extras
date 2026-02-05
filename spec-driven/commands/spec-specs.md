@@ -61,6 +61,12 @@ Total: 3 features
 - **Missing frontmatter**: Show with status "unknown"
 - **Invalid directory name**: Skip (not a feature)
 
+## Task
+
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
+List all features.
+
 ## Filtering (optional)
 
 ```bash

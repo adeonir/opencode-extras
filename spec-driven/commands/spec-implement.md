@@ -123,6 +123,12 @@ After execution:
 - If all done: suggest `/spec-validate` for final review
 - If tasks remain: suggest continuing with `/spec-implement`
 
+## Task
+
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
+Implement tasks with $ARGUMENTS.
+
 ## Error Handling
 
 - **Feature not found**: List available features or suggest `/spec-init`

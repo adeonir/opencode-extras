@@ -253,6 +253,12 @@ Summary with next steps based on mode:
 | Tasks | Run /spec-implement | Fix coverage gaps     |
 | Full  | Run /spec-archive   | Run /spec-implement   |
 
+## Task
+
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
+Validate feature with $ARGUMENTS.
+
 ## Error Handling
 
 - **Feature not found**: List available features or suggest `/spec-init`

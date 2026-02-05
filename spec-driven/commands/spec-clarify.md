@@ -69,6 +69,12 @@ After all clarifications:
 - Check if any new clarifications emerged
 - Suggest `/spec-plan` as next step if spec is complete
 
+## Task
+
+Execute this command immediately. Do not interpret, discuss, or ask for confirmation.
+
+Resolve clarifications for feature with $ARGUMENTS.
+
 ## Error Handling
 
 - **Feature not found**: List available features or suggest `/spec-init`
